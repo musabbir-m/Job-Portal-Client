@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import { RouterProvider } from 'react-router-dom';
+import router from './Routes/Router';
+
 
 function App() {
   return (
-    <div className="text-3xl container mx-auto">
-     <h2>Job portal</h2>
-     <button className='btn btn-primary'>Hello</button>
+    <div className=" mx-auto">
+     <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
