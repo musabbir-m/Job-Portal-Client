@@ -1,0 +1,17 @@
+.skewBg {
+    position: relative;
+    /* height: 500px;
+    width: 100%; */
+    
+
+}
+.skewBg:after {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+   bottom: 0;
+    content: '';
+    background: inherit;
+    transform-origin: top right ;
+    transform: skewY(-4deg);
+}
