@@ -1,4 +1,5 @@
 import React from "react";
+import Companies from "../Companies/Companies";
 import Experienced from "../Experienced/Experienced";
 import Fresher from "../Fresher/Fresher";
 import "./Home.css";
@@ -30,6 +31,7 @@ const Home = () => {
 
       <Fresher></Fresher>
       <Experienced></Experienced>
+      <Companies></Companies>
     </div>
   );
 };
