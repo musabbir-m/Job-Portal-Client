@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Context/AuthProvider";
 
 const Navbar = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut()
+      .then((result) => console.log(result))
+      .catch((err) => console.log(err));
+  };
   const itmes = (
     <>
       <li>
@@ -15,10 +23,17 @@ const Navbar = () => {
       <li>
         <Link to="/contact"> Contact Us</Link>
       </li>
-      <li>
-        {" "}
-        <Link to="/signup">Sign Up</Link>
-      </li>
+      {
+        user?.uid?(
+            <button className="font-semibold" onClick={handleLogOut}>
+            Logout
+          </button>
+        ):(<li>
+            {" "}
+            <Link to="/signup">Sign Up</Link>
+          </li>)
+      }
+     
 
       {/* <li tabIndex={0}>
           <a className="justify-between">
