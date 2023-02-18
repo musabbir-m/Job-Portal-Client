@@ -1,11 +1,13 @@
 import React from "react";
+import Fresher from "../Fresher/Fresher";
 import "./Home.css";
 
 const Home = () => {
   return (
     <div>
-      <div className="skewBg bg-blue-100 h-[750px] lg:h-[500px] pt-24 lg:flex justify-between ">
-        <div className="pl-10">
+        {/* First seciton of Home starts */}
+      <div className="skewBg bg-blue-100 h-[750px] lg:h-[550px]  lg:flex justify-between  mb-32">
+        <div className="pl-10 pt-32">
           <h3 className="text-sm font-semibold">WE HAVE 15000+ LIVE JOBS</h3>
           <h1 className="text-4xl mt-5">
             Find Your Dream Jobs <hr /> with <span>JobPortal</span>
@@ -16,11 +18,16 @@ const Home = () => {
             industries.
           </p>
         </div>
-        <div className=" w-80  max-h-64 ">
+        <div className=" w-2/5 max-h-64 pt-12 ">
           <img src="Hiring2.svg" alt="" />
         </div>
         <div></div>
       </div>
+      {/* First seciton of home Ends */}
+
+      {/* Other sections bellow */}
+
+      <Fresher></Fresher>
     </div>
   );
 };
