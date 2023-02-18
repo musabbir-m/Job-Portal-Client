@@ -10,7 +10,7 @@ const Jobcard = ({data}) => {
         {/* card main body */}
 
         <div className="p-8 flex justify-between">
-          <img className="" src="" alt="star" />
+          <img className="w-20 rounded" src={logo} alt="star" />
           <div>
             <h2 className="text-md font-semibold">{name}</h2>
             <p className="text-sm text-gray-600">{company}</p>

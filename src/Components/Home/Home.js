@@ -1,4 +1,5 @@
 import React from "react";
+import Experienced from "../Experienced/Experienced";
 import Fresher from "../Fresher/Fresher";
 import "./Home.css";
 
@@ -28,6 +29,7 @@ const Home = () => {
       {/* Other sections bellow */}
 
       <Fresher></Fresher>
+      <Experienced></Experienced>
     </div>
   );
 };

@@ -17,13 +17,9 @@ const Fresher = () => {
       {jobs?.slice(0,6).map(job=> <Jobcard data={job}></Jobcard> )}
 
      
-      <Link to='/fresher'>
+      <Link to='/fresherall'>
       <button className=" bg-blue-700 hover:bg-blue-500 text-white text-sm px-8 rounded-sm py-2">See All <BsArrowRight className="inline"></BsArrowRight> </button>
       </Link>
-      
-      
-      
-      
 
     </div>
   );

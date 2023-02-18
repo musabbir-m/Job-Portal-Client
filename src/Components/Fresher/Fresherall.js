@@ -11,4 +11,4 @@ const Fresherall = () => {
     );
 };
 
-export default Fresherall;
+export default Fresherall;  

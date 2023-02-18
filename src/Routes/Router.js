@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import About from "../Components/About/About";
 import Contact from "../Components/Contact/Contact";
+import Experienced from "../Components/Experienced/Experienced";
+import Experiencedall from "../Components/Experienced/Experiencedall";
 import Fresherall from "../Components/Fresher/Fresherall";
 import Home from "../Components/Home/Home";
 import SignUp from "../Components/SignUp/SignUp";
@@ -29,10 +31,15 @@ const router= createBrowserRouter([
                 element: <Contact></Contact>
             },
             {
-                path: '/fresher',
+                path: '/fresherall',
                 element: <Fresherall></Fresherall>,
                 loader: ()=> fetch('http://localhost:5000/fresher')
-            }
+            },
+            {
+                path: '/experiencedall',
+                element: <Experiencedall></Experiencedall>,
+                loader: ()=> fetch('http://localhost:5000/experienced')
+            },
 
         ]
     }
